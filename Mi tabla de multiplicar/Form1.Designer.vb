@@ -102,7 +102,7 @@ Partial Class Form1
         'optExponenciacion
         '
         Me.optExponenciacion.AutoSize = True
-        Me.optExponenciacion.Location = New System.Drawing.Point(266, 194)
+        Me.optExponenciacion.Location = New System.Drawing.Point(266, 190)
         Me.optExponenciacion.Name = "optExponenciacion"
         Me.optExponenciacion.Size = New System.Drawing.Size(110, 17)
         Me.optExponenciacion.TabIndex = 6
@@ -124,7 +124,7 @@ Partial Class Form1
         'optmodulo
         '
         Me.optmodulo.AutoSize = True
-        Me.optmodulo.Location = New System.Drawing.Point(266, 217)
+        Me.optmodulo.Location = New System.Drawing.Point(266, 213)
         Me.optmodulo.Name = "optmodulo"
         Me.optmodulo.Size = New System.Drawing.Size(46, 17)
         Me.optmodulo.TabIndex = 7
@@ -148,9 +148,9 @@ Partial Class Form1
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(226, 254)
+        Me.Button1.Location = New System.Drawing.Point(204, 236)
         Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(171, 60)
+        Me.Button1.Size = New System.Drawing.Size(240, 87)
         Me.Button1.TabIndex = 10
         Me.Button1.Text = "Button1"
         Me.Button1.UseVisualStyleBackColor = True
