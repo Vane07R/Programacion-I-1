@@ -1,5 +1,5 @@
 ﻿Public Class Form1
-    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles btnProcesar.Click
+    Private Sub Button1_Click(sender As Object, e As EventArgs) 
         Dim ntabla As SByte
         ntabla = txtntabla.Text
 
