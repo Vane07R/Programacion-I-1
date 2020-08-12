@@ -183,7 +183,7 @@ Partial Class Form1
         Me.Controls.Add(Me.lblnum2)
         Me.Controls.Add(Me.lblnum1)
         Me.Name = "Form1"
-        Me.Text = "Tabla de Multiplicar"
+        Me.Text = "Calcular"
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
