@@ -37,7 +37,7 @@ Partial Class Form1
         Me.btnProcesar.Name = "btnProcesar"
         Me.btnProcesar.Size = New System.Drawing.Size(162, 35)
         Me.btnProcesar.TabIndex = 0
-        Me.btnProcesar.Text = "Numeros pares"
+        Me.btnProcesar.Text = "Numeros pares e Impares"
         Me.btnProcesar.UseVisualStyleBackColor = True
         '
         'lstejercicios
