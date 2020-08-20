@@ -675,7 +675,7 @@ Partial Class Form1
         Me.Controls.Add(Me.cbxentrada3)
         Me.Controls.Add(Me.btnmoneda)
         Me.Name = "Form1"
-        Me.Text = "Tabla de Multiplicar"
+        Me.Text = "Conversores"
         Me.ResumeLayout(False)
         Me.PerformLayout()
 

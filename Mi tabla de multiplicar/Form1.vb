@@ -959,4 +959,38 @@
             lblnum2.Text = "A N"
         End If
     End Sub
+
+    Private Sub btnmoneda_Click(sender As Object, e As EventArgs) Handles btnmoneda.Click
+        If cbxentrada3.Text = "Nanosegundo" And cbxsalida3.Text = "Nanosegundo" Then
+            lblr3.Text = Val(txtcodigo2.Text)
+            lblnum3.Text = "NS"
+        ElseIf cbxentrada2.Text = "Nanosegundo" And cbxsalida2.Text = "Microsegundo" Then
+            lblr2.Text = Val(txtcodigo2.Text) / 1000
+            lblnum2.Text = "MS"
+        ElseIf cbxentrada2.Text = "Nanosegundo" And cbxsalida2.Text = "Milisegundo" Then
+            lblr2.Text = Val(txtcodigo2.Text) / 1000000.0
+            lblnum2.Text = "MLS"
+        ElseIf cbxentrada2.Text = "Nanosegundo" And cbxsalida2.Text = "Segundo" Then
+            lblr2.Text = Val(txtcodigo2.Text) / 1000000000.0
+            lblnum2.Text = "Seng"
+        ElseIf cbxentrada2.Text = "Nanosegundo" And cbxsalida2.Text = "Minuto" Then
+            lblr2.Text = Val(txtcodigo2.Text) / 60000000000.0
+            lblnum2.Text = "Min"
+        ElseIf cbxentrada2.Text = "Nanosegundo" And cbxsalida2.Text = "Hora" Then
+            lblr2.Text = Val(txtcodigo2.Text) / 3600000000000.0
+            lblnum2.Text = "Hora"
+        ElseIf cbxentrada2.Text = "Nanosegundo" And cbxsalida2.Text = "Día" Then
+            lblr2.Text = Val(txtcodigo2.Text) / 86400000000000.0
+            lblnum2.Text = "Dia"
+        ElseIf cbxentrada2.Text = "Nanosegundo" And cbxsalida2.Text = "Semana" Then
+            lblr2.Text = Val(txtcodigo2.Text) / 604800000000000.0
+            lblnum2.Text = "Smn"
+        ElseIf cbxentrada2.Text = "Nanosegundo" And cbxsalida2.Text = "Mes" Then
+            lblr2.Text = Val(txtcodigo2.Text) / 2.628E+15
+            lblnum2.Text = "Mes"
+        ElseIf cbxentrada2.Text = "Nanosegundo" And cbxsalida2.Text = "Año natural" Then
+            lblr2.Text = Val(txtcodigo2.Text) / 3.154E+16
+            lblnum2.Text = "A.N"
+        End If
+    End Sub
 End Class
