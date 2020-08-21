@@ -959,4 +959,329 @@
             lblnum2.Text = "A N"
         End If
     End Sub
+
+    Private Sub btnvolumen_Click(sender As Object, e As EventArgs) Handles btnvolumen.Click
+        If cbxentrada5.Text = "Litros" And cbxsalida5.Text = "Litros" Then
+            lblr5.Text = Val(txtcodigo5.Text)
+            lblnum5.Text = "L"
+        ElseIf cbxentrada5.Text = "Litros" And cbxsalida5.Text = "Mililitros" Then
+            lblr5.Text = Val(txtcodigo5.Text) * 1000
+            lblnum5.Text = "MLL"
+        ElseIf cbxentrada5.Text = "Litros" And cbxsalida5.Text = "Galón Imperial" Then
+            lblr5.Text = Val(txtcodigo5.Text) / 4.546
+            lblnum5.Text = "GI"
+        ElseIf cbxentrada5.Text = "Litros" And cbxsalida5.Text = "Cucharada estadounidense" Then
+            lblr5.Text = Val(txtcodigo5.Text) * 67.628
+            lblnum5.Text = "CE"
+        ElseIf cbxentrada5.Text = "Litros" And cbxsalida5.Text = "Pinta estadounidense" Then
+            lblr5.Text = Val(txtcodigo5.Text) * 2.113
+            lblnum5.Text = "PE"
+        ElseIf cbxentrada5.Text = "Litros" And cbxsalida5.Text = "Onza liquida imperial" Then
+            lblr5.Text = Val(txtcodigo5.Text) * 35.195
+            lblnum5.Text = "OLI"
+        ElseIf cbxentrada5.Text = "Litros" And cbxsalida5.Text = "Galón estadounidense" Then
+            lblr5.Text = Val(txtcodigo5.Text) / 3.785
+            lblnum5.Text = "GE"
+        ElseIf cbxentrada5.Text = "Litros" And cbxsalida5.Text = "Metro cubico" Then
+            lblr5.Text = Val(txtcodigo5.Text) / 1000
+            lblnum5.Text = "MC"
+        ElseIf cbxentrada5.Text = "Litros" And cbxsalida5.Text = "Pie Cubico" Then
+            lblr5.Text = Val(txtcodigo5.Text) / 28.317
+            lblnum5.Text = "PC"
+        ElseIf cbxentrada5.Text = "Litros" And cbxsalida5.Text = "Pulgada Cubica" Then
+            lblr5.Text = Val(txtcodigo5.Text) * 61.024
+            lblnum5.Text = "PULGC"
+
+
+        ElseIf cbxentrada5.Text = "Mililitros" And cbxsalida5.Text = "Litros" Then
+            lblr5.Text = Val(txtcodigo5.Text) / 1000
+            lblnum5.Text = "L"
+        ElseIf cbxentrada5.Text = "Mililitros" And cbxsalida5.Text = "Mililitros" Then
+            lblr5.Text = Val(txtcodigo5.Text)
+            lblnum5.Text = "MLL"
+        ElseIf cbxentrada5.Text = "Mililitros" And cbxsalida5.Text = "Galón Imperial" Then
+            lblr5.Text = Val(txtcodigo5.Text) / 4546
+            lblnum5.Text = "GI"
+        ElseIf cbxentrada5.Text = "Mililitros" And cbxsalida5.Text = "Cucharada estadounidense" Then
+            lblr5.Text = Val(txtcodigo5.Text) / 14.787
+            lblnum5.Text = "CE"
+        ElseIf cbxentrada5.Text = "Mililitros" And cbxsalida5.Text = "Pinta estadounidense" Then
+            lblr5.Text = Val(txtcodigo5.Text) / 473
+            lblnum5.Text = "PE"
+        ElseIf cbxentrada5.Text = "Mililitros" And cbxsalida5.Text = "Onza liquida imperial" Then
+            lblr5.Text = Val(txtcodigo5.Text) / 29.574
+            lblnum5.Text = "OLI"
+        ElseIf cbxentrada5.Text = "Mililitros" And cbxsalida5.Text = "Galón estadounidense" Then
+            lblr5.Text = Val(txtcodigo5.Text) / 3785
+            lblnum5.Text = "GE"
+        ElseIf cbxentrada5.Text = "Mililitros" And cbxsalida5.Text = "Metro cubico" Then
+            lblr5.Text = Val(txtcodigo5.Text) / 1000000.0
+            lblnum5.Text = "MC"
+        ElseIf cbxentrada5.Text = "Mililitros" And cbxsalida5.Text = "Pie Cubico" Then
+            lblr5.Text = Val(txtcodigo5.Text) / 28317
+            lblnum5.Text = "PC"
+        ElseIf cbxentrada5.Text = "Mililitros" And cbxsalida5.Text = "Pulgada Cubica" Then
+            lblr5.Text = Val(txtcodigo5.Text) / 16.387
+            lblnum5.Text = "PULGC"
+
+
+        ElseIf cbxentrada5.Text = "Galón Imperial" And cbxsalida5.Text = "Litros" Then
+            lblr5.Text = Val(txtcodigo5.Text) * 4.546
+            lblnum5.Text = "L"
+        ElseIf cbxentrada5.Text = "Galón Imperial" And cbxsalida5.Text = "Mililitros" Then
+            lblr5.Text = Val(txtcodigo5.Text) * 4546
+            lblnum5.Text = "MLL"
+        ElseIf cbxentrada5.Text = "Galón Imperial" And cbxsalida5.Text = "Galón Imperial" Then
+            lblr5.Text = Val(txtcodigo5.Text)
+            lblnum5.Text = "GI"
+        ElseIf cbxentrada5.Text = "Galón Imperial" And cbxsalida5.Text = "Cucharada estadounidense" Then
+            lblr5.Text = Val(txtcodigo5.Text) * 307
+            lblnum5.Text = "CE"
+        ElseIf cbxentrada5.Text = "Galón Imperial" And cbxsalida5.Text = "Pinta estadounidense" Then
+            lblr5.Text = Val(txtcodigo5.Text) * 9.608
+            lblnum5.Text = "PE"
+        ElseIf cbxentrada5.Text = "Galón Imperial" And cbxsalida5.Text = "Onza liquida imperial " Then
+            lblr5.Text = Val(txtcodigo5.Text) * 160
+            lblnum5.Text = "OLI"
+        ElseIf cbxentrada5.Text = "Galón Imperial" And cbxsalida5.Text = "Galón estadounidense" Then
+            lblr5.Text = Val(txtcodigo5.Text) * 1.201
+            lblnum5.Text = "GE"
+        ElseIf cbxentrada5.Text = "Galón Imperial" And cbxsalida5.Text = "Metro cubico" Then
+            lblr5.Text = Val(txtcodigo5.Text) / 220
+            lblnum5.Text = "MC"
+        ElseIf cbxentrada5.Text = "Galón Imperial" And cbxsalida5.Text = "Pie cúbico" Then
+            lblr5.Text = Val(txtcodigo5.Text) / 6.229
+            lblnum5.Text = "PC"
+        ElseIf cbxentrada5.Text = "Galón Imperial" And cbxsalida5.Text = "Pulgada cúbica" Then
+            lblr5.Text = Val(txtcodigo5.Text) * 277
+            lblnum5.Text = "PULGC"
+
+
+        ElseIf cbxentrada5.Text = "Cucharada estadounidense" And cbxsalida5.Text = "Litros" Then
+            lblr5.Text = Val(txtcodigo5.Text) / 67.628
+            lblnum5.Text = "L"
+        ElseIf cbxentrada5.Text = "Cucharada estadounidense" And cbxsalida5.Text = "Mililitros" Then
+            lblr5.Text = Val(txtcodigo5.Text) / 14.787
+            lblnum5.Text = "MLL"
+        ElseIf cbxentrada5.Text = "Cucharada estadounidense" And cbxsalida5.Text = "Galón Imperial" Then
+            lblr5.Text = Val(txtcodigo5.Text) / 307
+            lblnum5.Text = "GI"
+        ElseIf cbxentrada5.Text = "Cucharada estadounidense" And cbxsalida5.Text = "Cucharada estadounidense" Then
+            lblr5.Text = Val(txtcodigo5.Text)
+            lblnum5.Text = "CE"
+        ElseIf cbxentrada5.Text = "Cucharada estadounidense" And cbxsalida5.Text = "Pinta estadounidense" Then
+            lblr5.Text = Val(txtcodigo5.Text) / 32
+            lblnum5.Text = "PE"
+        ElseIf cbxentrada5.Text = "Cucharada estadounidense" And cbxsalida5.Text = "Onza liquida imperial " Then
+            lblr5.Text = Val(txtcodigo5.Text) / 1.922
+            lblnum5.Text = "OLI"
+        ElseIf cbxentrada5.Text = "Cucharada estadounidense" And cbxsalida5.Text = "Galón estadounidense" Then
+            lblr5.Text = Val(txtcodigo5.Text) / 256
+            lblnum5.Text = "GE"
+        ElseIf cbxentrada5.Text = "Cucharada estadounidense" And cbxsalida5.Text = "Metro cubico" Then
+            lblr5.Text = Val(txtcodigo5.Text) / 67628
+            lblnum5.Text = "MC"
+        ElseIf cbxentrada5.Text = "Cucharada estadounidense" And cbxsalida5.Text = "Pie cúbico" Then
+            lblr5.Text = Val(txtcodigo5.Text) / 1915
+            lblnum5.Text = "PC"
+        ElseIf cbxentrada5.Text = "Cucharada estadounidense" And cbxsalida5.Text = "Pulgada cúbica" Then
+            lblr5.Text = Val(txtcodigo5.Text) / 1.108
+            lblnum5.Text = "PULGC"
+
+
+
+        ElseIf cbxentrada5.Text = "Pinta estadounidense" And cbxsalida5.Text = "Litros" Then
+            lblr5.Text = Val(txtcodigo5.Text) / 2.113
+            lblnum5.Text = "L"
+        ElseIf cbxentrada5.Text = "Pinta estadounidense" And cbxsalida5.Text = "Mililitros" Then
+            lblr5.Text = Val(txtcodigo5.Text) * 473
+            lblnum5.Text = "MLL"
+        ElseIf cbxentrada5.Text = "Pinta estadounidense" And cbxsalida5.Text = "Galón Imperial" Then
+            lblr5.Text = Val(txtcodigo5.Text) / 9.608
+            lblnum5.Text = "GI"
+        ElseIf cbxentrada5.Text = "Pinta estadounidense" And cbxsalida5.Text = "Cucharada estadounidense" Then
+            lblr5.Text = Val(txtcodigo5.Text) * 32
+            lblnum5.Text = "CE"
+        ElseIf cbxentrada5.Text = "Pinta estadounidense" And cbxsalida5.Text = "Pinta estadounidense" Then
+            lblr5.Text = Val(txtcodigo5.Text)
+            lblnum5.Text = "PE"
+        ElseIf cbxentrada5.Text = "Pinta estadounidense" And cbxsalida5.Text = "Onza liquida imperial " Then
+            lblr5.Text = Val(txtcodigo5.Text) * 16.653
+            lblnum5.Text = "OLI"
+        ElseIf cbxentrada5.Text = "Pinta estadounidense" And cbxsalida5.Text = "Galón estadounidense" Then
+            lblr5.Text = Val(txtcodigo5.Text) / 8
+            lblnum5.Text = "GE"
+        ElseIf cbxentrada5.Text = "Pinta estadounidense" And cbxsalida5.Text = "Metro cubico" Then
+            lblr5.Text = Val(txtcodigo5.Text) / 2113
+            lblnum5.Text = "MC"
+        ElseIf cbxentrada5.Text = "Pinta estadounidense" And cbxsalida5.Text = "Pie cúbico" Then
+            lblr5.Text = Val(txtcodigo5.Text) / 59.844
+            lblnum5.Text = "PC"
+        ElseIf cbxentrada5.Text = "Pinta estadounidense" And cbxsalida5.Text = "Pulgada cúbica" Then
+            lblr5.Text = Val(txtcodigo5.Text) * 28.875
+            lblnum5.Text = "PULGC"
+
+
+        ElseIf cbxentrada5.Text = "Onza liquida imperial " And cbxsalida5.Text = "Litros" Then
+            lblr5.Text = Val(txtcodigo5.Text) / 35.195
+            lblnum5.Text = "L"
+        ElseIf cbxentrada5.Text = "Onza liquida imperial " And cbxsalida5.Text = "Mililitros" Then
+            lblr5.Text = Val(txtcodigo5.Text) * 28.413
+            lblnum5.Text = "MLL"
+        ElseIf cbxentrada5.Text = "Onza liquida imperial " And cbxsalida5.Text = "Galón Imperial" Then
+            lblr5.Text = Val(txtcodigo5.Text) / 160
+            lblnum5.Text = "GI"
+        ElseIf cbxentrada5.Text = "Onza liquida imperial " And cbxsalida5.Text = "Cucharada estadounidense" Then
+            lblr5.Text = Val(txtcodigo5.Text) * 1.922
+            lblnum5.Text = "CE"
+        ElseIf cbxentrada5.Text = "Onza liquida imperial " And cbxsalida5.Text = "Pinta estadounidense" Then
+            lblr5.Text = Val(txtcodigo5.Text) / 16.653
+            lblnum5.Text = "PE"
+        ElseIf cbxentrada5.Text = "Onza liquida imperial " And cbxsalida5.Text = "Onza liquida imperial " Then
+            lblr5.Text = Val(txtcodigo5.Text) * 16.653
+            lblnum5.Text = "OLI"
+        ElseIf cbxentrada5.Text = "Onza liquida imperial " And cbxsalida5.Text = "Galón estadounidense" Then
+            lblr5.Text = Val(txtcodigo5.Text) / 8
+            lblnum5.Text = "GE"
+        ElseIf cbxentrada5.Text = "Onza liquida imperial " And cbxsalida5.Text = "Metro cubico" Then
+            lblr5.Text = Val(txtcodigo5.Text) / 2113
+            lblnum5.Text = "MC"
+        ElseIf cbxentrada5.Text = "Onza liquida imperial " And cbxsalida5.Text = "Pie cúbico" Then
+            lblr5.Text = Val(txtcodigo5.Text) / 59.844
+            lblnum5.Text = "PC"
+        ElseIf cbxentrada5.Text = "Onza liquida imperial " And cbxsalida5.Text = "Pulgada cúbica" Then
+            lblr5.Text = Val(txtcodigo5.Text) * 28.875
+            lblnum5.Text = "PULGC"
+
+
+        ElseIf cbxentrada5.Text = "Galón estadounidense" And cbxsalida5.Text = "Litros" Then
+            lblr5.Text = Val(txtcodigo5.Text) * 3.785
+            lblnum5.Text = "L"
+        ElseIf cbxentrada5.Text = "Galón estadounidense" And cbxsalida5.Text = "Mililitros" Then
+            lblr5.Text = Val(txtcodigo5.Text) * 3785
+            lblnum5.Text = "MLL"
+        ElseIf cbxentrada5.Text = "Galón estadounidense" And cbxsalida5.Text = "Galón Imperial" Then
+            lblr5.Text = Val(txtcodigo5.Text) / 1.201
+            lblnum5.Text = "GI"
+        ElseIf cbxentrada5.Text = "Galón estadounidense" And cbxsalida5.Text = "Cucharada estadounidense" Then
+            lblr5.Text = Val(txtcodigo5.Text) * 256
+            lblnum5.Text = "CE"
+        ElseIf cbxentrada5.Text = "Galón estadounidense" And cbxsalida5.Text = "Pinta estadounidense" Then
+            lblr5.Text = Val(txtcodigo5.Text) * 8
+            lblnum5.Text = ""
+        ElseIf cbxentrada5.Text = "Galón estadounidense" And cbxsalida5.Text = "Onza liquida imperial " Then
+            lblr5.Text = Val(txtcodigo5.Text) * 133
+            lblnum5.Text = "piec"
+        ElseIf cbxentrada5.Text = "Galón estadounidense" And cbxsalida5.Text = "Galón estadounidense" Then
+            lblr5.Text = Val(txtcodigo5.Text)
+            lblnum5.Text = "mll"
+        ElseIf cbxentrada5.Text = "Galón estadounidense" And cbxsalida5.Text = "Metro cubico" Then
+            lblr5.Text = Val(txtcodigo5.Text) / 264
+            lblnum5.Text = "Ce"
+        ElseIf cbxentrada5.Text = "Galón estadounidense" And cbxsalida5.Text = "Pie cúbico" Then
+            lblr5.Text = Val(txtcodigo5.Text) / 7.481
+            lblnum5.Text = "Ge"
+        ElseIf cbxentrada5.Text = "Galón estadounidense" And cbxsalida5.Text = "Pulgada cúbica" Then
+            lblr5.Text = Val(txtcodigo5.Text) * 231
+            lblnum5.Text = "PULGC"
+
+
+        ElseIf cbxentrada5.Text = "Metro cubico" And cbxsalida5.Text = "Litros" Then
+            lblr5.Text = Val(txtcodigo5.Text) * 1000
+            lblnum5.Text = "L"
+        ElseIf cbxentrada5.Text = "Metro cubico" And cbxsalida5.Text = "Mililitros" Then
+            lblr5.Text = Val(txtcodigo5.Text) / 1000000.0
+            lblnum5.Text = "MLL"
+        ElseIf cbxentrada5.Text = "Metro cubico" And cbxsalida5.Text = "Galón Imperial" Then
+            lblr5.Text = Val(txtcodigo5.Text) * 220
+            lblnum5.Text = "MC"
+        ElseIf cbxentrada5.Text = "Metro cubico" And cbxsalida5.Text = "Cucharada estadounidense" Then
+            lblr5.Text = Val(txtcodigo5.Text) * 67628
+            lblnum5.Text = "CE"
+        ElseIf cbxentrada5.Text = "Metro cubico" And cbxsalida5.Text = "Pinta estadounidense" Then
+            lblr5.Text = Val(txtcodigo5.Text) * 2113
+            lblnum5.Text = "PE"
+        ElseIf cbxentrada5.Text = "Metro cubico" And cbxsalida5.Text = "Onza liquida imperial " Then
+            lblr5.Text = Val(txtcodigo5.Text) * 35195
+            lblnum5.Text = "OLI"
+        ElseIf cbxentrada5.Text = "Metro cubico" And cbxsalida5.Text = "Galón estadounidense" Then
+            lblr5.Text = Val(txtcodigo5.Text) * 264
+            lblnum5.Text = "GE"
+        ElseIf cbxentrada5.Text = "Metro cubico" And cbxsalida5.Text = "Metro cubico" Then
+            lblr5.Text = Val(txtcodigo5.Text)
+            lblnum5.Text = "MC"
+        ElseIf cbxentrada5.Text = "Metro cubico" And cbxsalida5.Text = "Pie cúbico" Then
+            lblr5.Text = Val(txtcodigo5.Text) * 35.315
+            lblnum5.Text = "PC"
+        ElseIf cbxentrada5.Text = "Metro cubico" And cbxsalida5.Text = "Pulgada cúbica" Then
+            lblr5.Text = Val(txtcodigo5.Text) * 61024
+            lblnum5.Text = "PULGC"
+
+
+        ElseIf cbxentrada5.Text = "Pie cúbico" And cbxsalida5.Text = "Litros" Then
+            lblr5.Text = Val(txtcodigo5.Text) * 1000
+            lblnum5.Text = "L"
+        ElseIf cbxentrada5.Text = "Pie cúbico" And cbxsalida5.Text = "Mililitros" Then
+            lblr5.Text = Val(txtcodigo5.Text) * 1000000.0
+            lblnum5.Text = "MLL"
+        ElseIf cbxentrada5.Text = "Pie cúbico" And cbxsalida5.Text = "Galón Imperial" Then
+            lblr5.Text = Val(txtcodigo5.Text) * 220
+            lblnum5.Text = "GI"
+        ElseIf cbxentrada5.Text = "Pie cúbico" And cbxsalida5.Text = "Cucharada estadounidense" Then
+            lblr5.Text = Val(txtcodigo5.Text) * 67628
+            lblnum5.Text = "CE"
+        ElseIf cbxentrada5.Text = "Pie cúbico" And cbxsalida5.Text = "Pinta estadounidense" Then
+            lblr5.Text = Val(txtcodigo5.Text) * 2113
+            lblnum5.Text = "PE"
+        ElseIf cbxentrada5.Text = "Pie cúbico" And cbxsalida5.Text = "Onza liquida imperial " Then
+            lblr5.Text = Val(txtcodigo5.Text) * 35195
+            lblnum5.Text = "OLI"
+        ElseIf cbxentrada5.Text = "Pie cúbico" And cbxsalida5.Text = "Galón estadounidense" Then
+            lblr5.Text = Val(txtcodigo5.Text) * 264
+            lblnum5.Text = "GE"
+        ElseIf cbxentrada5.Text = "Pie cúbico" And cbxsalida5.Text = "Metro cubico" Then
+            lblr5.Text = Val(txtcodigo5.Text) / 264
+            lblnum5.Text = "MC"
+        ElseIf cbxentrada5.Text = "Pie cúbico" And cbxsalida5.Text = "Pie cúbico" Then
+            lblr5.Text = Val(txtcodigo5.Text)
+            lblnum5.Text = "PC"
+        ElseIf cbxentrada5.Text = "Pie cúbico" And cbxsalida5.Text = "Pulgada cúbica" Then
+            lblr5.Text = Val(txtcodigo5.Text) * 231
+            lblnum5.Text = "PULGC"
+
+
+
+        ElseIf cbxentrada5.Text = "Pulgada cúbica" And cbxsalida5.Text = "Litros" Then
+            lblr5.Text = Val(txtcodigo5.Text) / 61.024
+            lblnum5.Text = "L"
+        ElseIf cbxentrada5.Text = "Pulgada cúbica" And cbxsalida5.Text = "Mililitros" Then
+            lblr5.Text = Val(txtcodigo5.Text) * 16.387
+            lblnum5.Text = "MLL"
+        ElseIf cbxentrada5.Text = "Pulgada cúbica" And cbxsalida5.Text = "Galón Imperial" Then
+            lblr5.Text = Val(txtcodigo5.Text) / 277
+            lblnum5.Text = "GI"
+        ElseIf cbxentrada5.Text = "Pulgada cúbica" And cbxsalida5.Text = "Cucharada estadounidense" Then
+            lblr5.Text = Val(txtcodigo5.Text) * 1.108
+            lblnum5.Text = "CE"
+        ElseIf cbxentrada5.Text = "Pulgada cúbica" And cbxsalida5.Text = "Pinta estadounidense" Then
+            lblr5.Text = Val(txtcodigo5.Text) / 28.875
+            lblnum5.Text = "PE"
+        ElseIf cbxentrada5.Text = "Pulgada cúbica" And cbxsalida5.Text = "Onza liquida imperial " Then
+            lblr5.Text = Val(txtcodigo5.Text) / 1.734
+            lblnum5.Text = "OLI"
+        ElseIf cbxentrada5.Text = "Pulgada cúbica" And cbxsalida5.Text = "Galón estadounidense" Then
+            lblr5.Text = Val(txtcodigo5.Text) / 231
+            lblnum5.Text = "GE"
+        ElseIf cbxentrada5.Text = "Pulgada cúbica" And cbxsalida5.Text = "Metro cubico" Then
+            lblr5.Text = Val(txtcodigo5.Text) / 61024
+            lblnum5.Text = "MC"
+        ElseIf cbxentrada5.Text = "Pulgada cúbica" And cbxsalida5.Text = "Pie cúbico" Then
+            lblr5.Text = Val(txtcodigo5.Text) / 1728
+            lblnum5.Text = "PC"
+        ElseIf cbxentrada5.Text = "Pulgada cúbica" And cbxsalida5.Text = "Pulgada cúbica" Then
+            lblr5.Text = Val(txtcodigo5.Text)
+            lblnum5.Text = "PC"
+        End If
+
+    End Sub
 End Class
