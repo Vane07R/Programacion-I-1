@@ -67,8 +67,8 @@ Partial Class Form1
         Me.btnmasa = New System.Windows.Forms.Button()
         Me.lblr4 = New System.Windows.Forms.Label()
         Me.Label5 = New System.Windows.Forms.Label()
-        Me.cbxsalida4 = New System.Windows.Forms.ComboBox()
-        Me.cbxentrada4 = New System.Windows.Forms.ComboBox()
+        Me.cboxsalida4 = New System.Windows.Forms.ComboBox()
+        Me.cboxentrada4 = New System.Windows.Forms.ComboBox()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.lblr3 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
@@ -520,27 +520,27 @@ Partial Class Form1
         Me.Label5.TabIndex = 63
         Me.Label5.Text = "A"
         '
-        'cbxsalida4
+        'cboxsalida4
         '
-        Me.cbxsalida4.BackColor = System.Drawing.SystemColors.Desktop
-        Me.cbxsalida4.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.cbxsalida4.FormattingEnabled = True
-        Me.cbxsalida4.Items.AddRange(New Object() {"Colon", "USA", "EUR"})
-        Me.cbxsalida4.Location = New System.Drawing.Point(323, 102)
-        Me.cbxsalida4.Name = "cbxsalida4"
-        Me.cbxsalida4.Size = New System.Drawing.Size(139, 21)
-        Me.cbxsalida4.TabIndex = 62
+        Me.cboxsalida4.BackColor = System.Drawing.SystemColors.Desktop
+        Me.cboxsalida4.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.cboxsalida4.FormattingEnabled = True
+        Me.cboxsalida4.Items.AddRange(New Object() {"Tonelada", "", "Kilogramo", "", "Gramo", "", "Miligramo", "", "Microgramo", "", "Tonelada Larga", "", "Tonelada corta", "", "Stone", "", "Onza", "", "Libra"})
+        Me.cboxsalida4.Location = New System.Drawing.Point(323, 102)
+        Me.cboxsalida4.Name = "cboxsalida4"
+        Me.cboxsalida4.Size = New System.Drawing.Size(139, 21)
+        Me.cboxsalida4.TabIndex = 62
         '
-        'cbxentrada4
+        'cboxentrada4
         '
-        Me.cbxentrada4.BackColor = System.Drawing.SystemColors.Desktop
-        Me.cbxentrada4.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.cbxentrada4.FormattingEnabled = True
-        Me.cbxentrada4.Items.AddRange(New Object() {"Colon", "USA", "EUR"})
-        Me.cbxentrada4.Location = New System.Drawing.Point(322, 49)
-        Me.cbxentrada4.Name = "cbxentrada4"
-        Me.cbxentrada4.Size = New System.Drawing.Size(141, 21)
-        Me.cbxentrada4.TabIndex = 61
+        Me.cboxentrada4.BackColor = System.Drawing.SystemColors.Desktop
+        Me.cboxentrada4.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.cboxentrada4.FormattingEnabled = True
+        Me.cboxentrada4.Items.AddRange(New Object() {"Tonelada", "", "Kilogramo", "", "Gramo", "", "Miligramo", "", "Microgramo", "", "Tonelada Larga", "", "Tonelada corta", "", "Stone", "", "Onza", "", "Libra"})
+        Me.cboxentrada4.Location = New System.Drawing.Point(322, 49)
+        Me.cboxentrada4.Name = "cboxentrada4"
+        Me.cboxentrada4.Size = New System.Drawing.Size(141, 21)
+        Me.cboxentrada4.TabIndex = 61
         '
         'Label4
         '
@@ -665,8 +665,8 @@ Partial Class Form1
         Me.Controls.Add(Me.btnmasa)
         Me.Controls.Add(Me.lblr4)
         Me.Controls.Add(Me.Label5)
-        Me.Controls.Add(Me.cbxsalida4)
-        Me.Controls.Add(Me.cbxentrada4)
+        Me.Controls.Add(Me.cboxsalida4)
+        Me.Controls.Add(Me.cboxentrada4)
         Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.lblr3)
         Me.Controls.Add(Me.Label2)
@@ -726,8 +726,8 @@ Partial Class Form1
     Friend WithEvents btnmasa As Button
     Friend WithEvents lblr4 As Label
     Friend WithEvents Label5 As Label
-    Friend WithEvents cbxsalida4 As ComboBox
-    Friend WithEvents cbxentrada4 As ComboBox
+    Friend WithEvents cboxsalida4 As ComboBox
+    Friend WithEvents cboxentrada4 As ComboBox
     Friend WithEvents Label4 As Label
     Friend WithEvents lblr3 As Label
     Friend WithEvents Label2 As Label
