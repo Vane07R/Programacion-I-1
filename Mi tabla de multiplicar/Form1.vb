@@ -1595,4 +1595,323 @@
             lblnum4.Text = "oz"
         End If
     End Sub
+
+    Private Sub btnmoneda_Click(sender As Object, e As EventArgs) Handles btnmoneda.Click
+        If cbxentrada3.Text = "Colón Salvadoreño" And cbxsalida3.Text = "Colón Salvadoreño" Then
+            lblr3.Text = Val(txtcodigo3.Text)
+            lblnum3.Text = "CS"
+        ElseIf cbxentrada3.Text = "Colón Salvadoreño" And cbxsalida3.Text = "Dolar estadounidense" Then
+            lblr3.Text = Val(txtcodigo3.Text) * 0.11
+            lblnum3.Text = "DE"
+        ElseIf cbxentrada3.Text = "Colón Salvadoreño" And cbxsalida3.Text = "Quetzal " Then
+            lblr3.Text = Val(txtcodigo3.Text) * 0.88
+            lblnum3.Text = "Q"
+        ElseIf cbxentrada3.Text = "Colón Salvadoreño" And cbxsalida3.Text = "Lempira" Then
+            lblr3.Text = Val(txtcodigo3.Text) * 2.82
+            lblnum3.Text = "L"
+        ElseIf cbxentrada3.Text = "Colón Salvadoreño" And cbxsalida3.Text = "Colón Costarricense" Then
+            lblr3.Text = Val(txtcodigo3.Text) * 68.05
+            lblnum3.Text = "CC"
+        ElseIf cbxentrada3.Text = "Colón Salvadoreño" And cbxsalida3.Text = "Balboa" Then
+            lblr3.Text = Val(txtcodigo3.Text) * 0.11
+            lblnum3.Text = "B"
+        ElseIf cbxentrada3.Text = "Colón Salvadoreño" And cbxsalida3.Text = "Cordoba nicaraguense" Then
+            lblr3.Text = Val(txtcodigo3.Text) * 3.98
+            lblnum3.Text = "CN"
+        ElseIf cbxentrada3.Text = "Colón Salvadoreño" And cbxsalida.Text = "Dolar canadiense" Then
+            lblr3.Text = Val(txtcodigo3.Text) * 0.15
+            lblnum3.Text = "DC"
+        ElseIf cbxentrada3.Text = "Colón Salvadoreño" And cbxsalida3.Text = "Peso mexicano" Then
+            lblr3.Text = Val(txtcodigo3.Text) * 2.51
+            lblnum3.Text = "PM"
+        ElseIf cbxentrada3.Text = "Colón Salvadoreño" And cbxsalida3.Text = "Sol peruano" Then
+            lblr3.Text = Val(txtcodigo3.Text) * 0.41
+            lblnum3.Text = "SP"
+
+
+        ElseIf cbxentrada3.Text = "Dolar estadounidense" And cbxsalida3.Text = "Colón Salvadoreño" Then
+            lblr3.Text = Val(txtcodigo3.Text) * 8.75
+            lblnum3.Text = "CS"
+        ElseIf cbxentrada3.Text = "Dolar estadounidense" And cbxsalida3.Text = "Dolar estadounidense" Then
+            lblr3.Text = Val(txtcodigo3.Text)
+            lblnum3.Text = "DE"
+        ElseIf cbxentrada3.Text = "Dolar estadounidense" And cbxsalida3.Text = "Quetzal " Then
+            lblr3.Text = Val(txtcodigo3.Text) * 7.7
+            lblnum3.Text = "Q"
+        ElseIf cbxentrada3.Text = "Dolar estadounidense" And cbxsalida3.Text = "Lempira" Then
+            lblr3.Text = Val(txtcodigo3.Text) * 24.66
+            lblnum3.Text = "L"
+        ElseIf cbxentrada3.Text = "Dolar estadounidense" And cbxsalida3.Text = "Colón Costarricense" Then
+            lblr3.Text = Val(txtcodigo3.Text) * 595.4
+            lblnum3.Text = "CC"
+        ElseIf cbxentrada3.Text = "Dolar estadounidense" And cbxsalida3.Text = "Balboa" Then
+            lblr3.Text = Val(txtcodigo3.Text) * 1.0
+            lblnum3.Text = "B"
+        ElseIf cbxentrada3.Text = "Dolar estadounidense" And cbxsalida3.Text = "Cordoba nicaraguense" Then
+            lblr3.Text = Val(txtcodigo3.Text) * 34.84
+            lblnum3.Text = "CN"
+        ElseIf cbxentrada3.Text = "Dolar estadounidense" And cbxsalida.Text = "Dolar canadiense" Then
+            lblr3.Text = Val(txtcodigo3.Text) * 1.32
+            lblnum3.Text = "DC"
+        ElseIf cbxentrada3.Text = "Dolar estadounidense" And cbxsalida3.Text = "Peso mexicano" Then
+            lblr3.Text = Val(txtcodigo3.Text) * 21.98
+            lblnum3.Text = "PM"
+        ElseIf cbxentrada3.Text = " Dolar estadounidense" And cbxsalida3.Text = "Sol peruano" Then
+            lblr3.Text = Val(txtcodigo3.Text) * 3.58
+            lblnum3.Text = "SP"
+
+        ElseIf cbxentrada3.Text = "Quetzal" And cbxsalida3.Text = "Colón Salvadoreño" Then
+            lblr3.Text = Val(txtcodigo3.Text) * 1.14
+            lblnum3.Text = "CS"
+        ElseIf cbxentrada3.Text = "Quetzal" And cbxsalida3.Text = "Dolar estadounidense" Then
+            lblr3.Text = Val(txtcodigo3.Text) * 0.13
+            lblnum3.Text = "DE"
+        ElseIf cbxentrada3.Text = "Quetzal" And cbxsalida3.Text = "Quetzal " Then
+            lblr3.Text = Val(txtcodigo3.Text)
+            lblnum3.Text = "Q"
+        ElseIf cbxentrada3.Text = "Quetzal" And cbxsalida3.Text = "Lempira" Then
+            lblr3.Text = Val(txtcodigo3.Text) * 3.2
+            lblnum3.Text = "L"
+        ElseIf cbxentrada3.Text = "Quetzal" And cbxsalida3.Text = "Colón Costarricense" Then
+            lblr3.Text = Val(txtcodigo3.Text) * 77.32
+            lblnum3.Text = "CC"
+        ElseIf cbxentrada3.Text = "Quetzal" And cbxsalida3.Text = "Balboa" Then
+            lblr3.Text = Val(txtcodigo3.Text) * 0.13
+            lblnum3.Text = "B"
+        ElseIf cbxentrada3.Text = "Quetzal" And cbxsalida3.Text = "Cordoba nicaraguense" Then
+            lblr3.Text = Val(txtcodigo3.Text) * 4.52
+            lblnum3.Text = "CN"
+        ElseIf cbxentrada3.Text = "Quetzal" And cbxsalida.Text = "Dolar canadiense" Then
+            lblr3.Text = Val(txtcodigo3.Text) * 0.17
+            lblnum3.Text = "DC"
+        ElseIf cbxentrada3.Text = "Quetzal" And cbxsalida3.Text = "Peso mexicano" Then
+            lblr3.Text = Val(txtcodigo3.Text) * 2.85
+            lblnum3.Text = "PM"
+        ElseIf cbxentrada3.Text = "Quetzal" And cbxsalida3.Text = "Sol peruano" Then
+            lblr3.Text = Val(txtcodigo3.Text) * 0.46
+            lblnum3.Text = "SP"
+
+        ElseIf cbxentrada3.Text = "Lempira" And cbxsalida3.Text = "Colón Salvadoreño" Then
+            lblr3.Text = Val(txtcodigo3.Text) * 0.36
+            lblnum3.Text = "CS"
+        ElseIf cbxentrada3.Text = "Lempira" And cbxsalida3.Text = "Dolar estadounidense" Then
+            lblr3.Text = Val(txtcodigo3.Text) * 0.041
+            lblnum3.Text = "DE"
+        ElseIf cbxentrada3.Text = "Lempira" And cbxsalida3.Text = "Quetzal " Then
+            lblr3.Text = Val(txtcodigo3.Text) * 0.31
+            lblnum3.Text = "Q"
+        ElseIf cbxentrada3.Text = "Lempira" And cbxsalida3.Text = "Lempira" Then
+            lblr3.Text = Val(txtcodigo3.Text)
+            lblnum3.Text = "L"
+        ElseIf cbxentrada3.Text = "Lempira" And cbxsalida3.Text = "Colón Costarricense" Then
+            lblr3.Text = Val(txtcodigo3.Text) * 24.15
+            lblnum3.Text = "CC"
+        ElseIf cbxentrada3.Text = "Lempira" And cbxsalida3.Text = "Balboa" Then
+            lblr3.Text = Val(txtcodigo3.Text) * 0.041
+            lblnum3.Text = "B"
+        ElseIf cbxentrada3.Text = "Lempira" And cbxsalida3.Text = "Cordoba nicaraguense" Then
+            lblr3.Text = Val(txtcodigo3.Text) * 1.41
+            lblnum3.Text = "CN"
+        ElseIf cbxentrada3.Text = "Lempira" And cbxsalida.Text = "Dolar canadiense" Then
+            lblr3.Text = Val(txtcodigo3.Text) * 0.053
+            lblnum3.Text = "DC"
+        ElseIf cbxentrada3.Text = "Lempira" And cbxsalida3.Text = "Peso mexicano" Then
+            lblr3.Text = Val(txtcodigo3.Text) * 0.89
+            lblnum3.Text = "PM"
+        ElseIf cbxentrada3.Text = "Lempira" And cbxsalida3.Text = "Sol peruano" Then
+            lblr3.Text = Val(txtcodigo3.Text) * 0.15
+            lblnum3.Text = "SP"
+
+
+        ElseIf cbxentrada3.Text = "Colón Costarricense" And cbxsalida3.Text = "Colón Salvadoreño" Then
+            lblr3.Text = Val(txtcodigo3.Text) * 0.015
+            lblnum3.Text = "CS"
+        ElseIf cbxentrada3.Text = "Colón Costarricense" And cbxsalida3.Text = "Dolar estadounidense" Then
+            lblr3.Text = Val(txtcodigo3.Text) * 0.0017
+            lblnum3.Text = "DE"
+        ElseIf cbxentrada3.Text = "Colón Costarricense" And cbxsalida3.Text = "Quetzal " Then
+            lblr3.Text = Val(txtcodigo3.Text) * 0.013
+            lblnum3.Text = "Q"
+        ElseIf cbxentrada3.Text = "Colón Costarricense" And cbxsalida3.Text = "Lempira" Then
+            lblr3.Text = Val(txtcodigo3.Text) * 0.041
+            lblnum3.Text = "L"
+        ElseIf cbxentrada3.Text = "Colón Costarricense" And cbxsalida3.Text = "Colón Costarricense" Then
+            lblr3.Text = Val(txtcodigo3.Text)
+            lblnum3.Text = "CC"
+        ElseIf cbxentrada3.Text = "Colón Costarricense" And cbxsalida3.Text = "Balboa" Then
+            lblr3.Text = Val(txtcodigo3.Text) * 0.0017
+            lblnum3.Text = "B"
+        ElseIf cbxentrada3.Text = "Colón Costarricense" And cbxsalida3.Text = "Cordoba nicaraguense" Then
+            lblr3.Text = Val(txtcodigo3.Text) * 0.059
+            lblnum3.Text = "CN"
+        ElseIf cbxentrada3.Text = "Colón Costarricense" And cbxsalida.Text = "Dolar canadiense" Then
+            lblr3.Text = Val(txtcodigo3.Text) * 0.0022
+            lblnum3.Text = "DC"
+        ElseIf cbxentrada3.Text = "Colón Costarricense" And cbxsalida3.Text = "Peso mexicano" Then
+            lblr3.Text = Val(txtcodigo3.Text) * 0.037
+            lblnum3.Text = "PM"
+        ElseIf cbxentrada3.Text = "Colón Costarricense" And cbxsalida3.Text = "Sol peruano" Then
+            lblr3.Text = Val(txtcodigo3.Text) * 0.006
+            lblnum3.Text = "SP"
+
+
+        ElseIf cbxentrada3.Text = "Balboa" And cbxsalida3.Text = "Balboa" Then
+            lblr3.Text = Val(txtcodigo3.Text)
+            lblnum3.Text = " PAB"
+        ElseIf cbxentrada3.Text = "Balboa" And cbxsalida3.Text = "Colón Salvadoreño" Then
+            lblr3.Text = Val(txtcodigo3.Text) * 8.75
+            lblnum3.Text = "₡"
+        ElseIf cbxentrada3.Text = "Balboa" And cbxsalida3.Text = "Dolar Estadounidense" Then
+            lblr3.Text = Val(txtcodigo3.Text) * 10000
+            lblnum3.Text = " USD"
+        ElseIf cbxentrada3.Text = "Balboa" And cbxsalida3.Text = "Quetzal" Then
+            lblr3.Text = Val(txtcodigo3.Text) * 7.68
+            lblnum3.Text = "Q"
+        ElseIf cbxentrada3.Text = "Balboa" And cbxsalida3.Text = "Lempira" Then
+            lblr3.Text = Val(txtcodigo3.Text) * 24.66
+            lblnum3.Text = "L"
+        ElseIf cbxentrada3.Text = "Balboa" And cbxsalida3.Text = "Colón Costarisense" Then
+            lblr3.Text = Val(txtcodigo3.Text) * 595.4
+            lblnum3.Text = "₡"
+        ElseIf cbxentrada3.Text = "Balboa" And cbxsalida3.Text = "Cordoba Nicaraguence" Then
+            lblr3.Text = Val(txtcodigo3.Text) * 34.87
+            lblnum3.Text = "C$"
+        ElseIf cbxentrada3.Text = "Balboa" And cbxsalida3.Text = "Dolar Canadiense" Then
+            lblr3.Text = Val(txtcodigo3.Text) * 1.32
+            lblnum3.Text = "C$"
+        ElseIf cbxentrada3.Text = "Balboa" And cbxsalida3.Text = "Peso Mexicano" Then
+            lblr3.Text = Val(txtcodigo3.Text) * 22.14
+            lblnum3.Text = "$"
+        ElseIf cbxentrada3.Text = "Balboa" And cbxsalida3.Text = "Sol Peruano" Then
+            lblr3.Text = Val(txtcodigo3.Text) * 3.56
+            lblnum3.Text = "S/"
+
+        ElseIf cbxentrada3.Text = "Cordoba nicaraguense" And cbxsalida3.Text = "Cordoba nicaraguense" Then
+            lblr3.Text = Val(txtcodigo3.Text)
+            lblnum3.Text = "C$"
+        ElseIf cbxentrada3.Text = "Cordoba nicaraguense" And cbxsalida3.Text = "Colón Salvadoreño" Then
+            lblr3.Text = Val(txtcodigo3.Text) * 0.25
+            lblnum3.Text = "₡"
+        ElseIf cbxentrada3.Text = "Cordoba nicaraguense" And cbxsalida3.Text = "Dolar Estadounidense" Then
+            lblr3.Text = Val(txtcodigo3.Text) * 0.029
+            lblnum3.Text = "$"
+        ElseIf cbxentrada3.Text = "Cordoba nicaraguense" And cbxsalida3.Text = "Quetzal" Then
+            lblr3.Text = Val(txtcodigo3.Text) * 0.22
+            lblnum3.Text = "Q"
+        ElseIf cbxentrada3.Text = "Cordoba nicaraguense" And cbxsalida3.Text = "Lempira" Then
+            lblr3.Text = Val(txtcodigo3.Text) * 0.71
+            lblnum3.Text = "L"
+        ElseIf cbxentrada3.Text = "Cordoba nicaraguense" And cbxsalida3.Text = "Colón Costarisense" Then
+            lblr3.Text = Val(txtcodigo3.Text) * 17.09
+            lblnum3.Text = "₡"
+        ElseIf cbxentrada3.Text = "Cordoba nicaraguense" And cbxsalida3.Text = "Balboa" Then
+            lblr3.Text = Val(txtcodigo3.Text) * 0.029
+            lblnum3.Text = "PAB"
+        ElseIf cbxentrada3.Text = "Cordoba nicaraguense" And cbxsalida3.Text = "Dolar Canadiense" Then
+            lblr3.Text = Val(txtcodigo3.Text) * 0.038
+            lblnum3.Text = "C$"
+        ElseIf cbxentrada3.Text = "Cordoba nicaraguense" And cbxsalida3.Text = "Peso Mexicano" Then
+            lblr3.Text = Val(txtcodigo3.Text) * 0.63
+            lblnum3.Text = "$"
+        ElseIf cbxentrada3.Text = "Cordoba nicaraguense" And cbxsalida3.Text = "Sol Peruano" Then
+            lblr3.Text = (Val(txtcodigo3.Text) * 0.1)
+            lblnum3.Text = "S/"
+
+
+        ElseIf cbxentrada3.Text = "Dolar Canadiense" And cbxsalida3.Text = "Dolar Canadiense" Then
+            lblr3.Text = Val(txtcodigo3.Text)
+            lblnum3.Text = "C$"
+        ElseIf cbxentrada3.Text = "Dolar Canadiense" And cbxsalida3.Text = "Colón Salvadoreño" Then
+            lblr3.Text = Val(txtcodigo3.Text) * 6.63
+            lblnum3.Text = "₡"
+        ElseIf cbxentrada3.Text = "Dolar Canadiense" And cbxsalida3.Text = "Dolar Estadounidense" Then
+            lblr3.Text = Val(txtcodigo3.Text) * 0.76
+            lblnum3.Text = "$"
+        ElseIf cbxentrada3.Text = "Dolar Canadiense" And cbxsalida3.Text = "Quetzal" Then
+            lblr3.Text = Val(txtcodigo3.Text) * 5.84
+            lblnum3.Text = "Q"
+        ElseIf cbxentrada3.Text = "Dolar Canadiense" And cbxsalida3.Text = "Lempira" Then
+            lblr3.Text = Val(txtcodigo3.Text) * 18.69
+            lblnum3.Text = "L"
+        ElseIf cbxentrada3.Text = "Dolar Canadiense" And cbxsalida3.Text = "Colón Costarisense" Then
+            lblr3.Text = Val(txtcodigo3.Text) * 451.83
+            lblnum3.Text = "₡"
+        ElseIf cbxentrada3.Text = "Dolar Canadiense" And cbxsalida3.Text = "Cordoba Nicaraguence" Then
+            lblr3.Text = Val(txtcodigo3.Text) * 26.4
+            lblnum3.Text = "C$"
+        ElseIf cbxentrada3.Text = "Dolar Canadiense" And cbxsalida3.Text = "Peso Mexicano" Then
+            lblr3.Text = Val(txtcodigo3.Text) * 16.68
+            lblnum3.Text = "$"
+        ElseIf cbxentrada3.Text = "Dolar Canadiense" And cbxsalida3.Text = "Balboa" Then
+            lblr3.Text = Val(txtcodigo3.Text) * 0.76
+            lblnum3.Text = "S/"
+        ElseIf cbxentrada3.Text = "Dolar Canadiense" And cbxsalida3.Text = "Sol Peruano" Then
+            lblr3.Text = Val(txtcodigo3.Text) * 2.71
+            lblnum3.Text = "S/"
+
+        ElseIf cbxentrada3.Text = "Peso Mexicano" And cbxsalida3.Text = "Peso Mexicano" Then
+            lblr3.Text = Val(txtcodigo3.Text)
+            lblnum3.Text = "$"
+        ElseIf cbxentrada3.Text = "Peso Mexicano" And cbxsalida3.Text = "Colón Salvadoreño" Then
+            lblr3.Text = Val(txtcodigo3.Text) * 0.4
+            lblnum3.Text = "₡"
+        ElseIf cbxentrada3.Text = "Peso Mexicano" And cbxsalida3.Text = "Dolar Estadounidense" Then
+            lblr3.Text = Val(txtcodigo3.Text) * 0.046
+            lblnum3.Text = "$"
+        ElseIf cbxentrada3.Text = "Peso Mexicano" And cbxsalida3.Text = "Quetzal" Then
+            lblr3.Text = Val(txtcodigo3.Text) * 0.35
+            lblnum3.Text = "Q"
+        ElseIf cbxentrada3.Text = "Peso Mexicano" And cbxsalida3.Text = "Lempira" Then
+            lblr3.Text = Val(txtcodigo3.Text) * 1.12
+            lblnum3.Text = "L"
+        ElseIf cbxentrada3.Text = "Peso Mexicano" And cbxsalida3.Text = "Colón Costarisense" Then
+            lblr3.Text = Val(txtcodigo3.Text) * 27.09
+            lblnum3.Text = "₡"
+        ElseIf cbxentrada3.Text = "Peso Mexicano" And cbxsalida3.Text = "Balboa" Then
+            lblr3.Text = Val(txtcodigo3.Text) * 0.046
+            lblnum3.Text = "$"
+        ElseIf cbxentrada3.Text = "Peso Mexicano" And cbxsalida3.Text = "Cordoba Nicaraguence" Then
+            lblr3.Text = Val(txtcodigo3.Text) * 1.59
+            lblnum3.Text = "C$"
+        ElseIf cbxentrada3.Text = "Peso Mexicano" And cbxsalida3.Text = "Dolar Canadiense" Then
+            lblr3.Text = Val(txtcodigo3.Text) * 0.06
+            lblnum3.Text = "C$"
+        ElseIf cbxentrada3.Text = "Peso Mexicano" And cbxsalida3.Text = "Sol Peruano" Then
+            lblr3.Text = Val(txtcodigo3.Text) * 0.16
+            lblnum3.Text = "$"
+
+
+        ElseIf cbxentrada3.Text = "Sol Peruano" And cbxsalida3.Text = "Sol Peruano" Then
+            lblr3.Text = Val(txtcodigo3.Text)
+            lblnum3.Text = "S/"
+        ElseIf cbxentrada3.Text = "Sol Peruano" And cbxsalida3.Text = "Colón Salvadoreño" Then
+            lblr3.Text = Val(txtcodigo3.Text) * 2.44
+            lblnum3.Text = "₡"
+        ElseIf cbxentrada3.Text = "Sol Peruano" And cbxsalida3.Text = "Dolar Estadounidense" Then
+            lblr3.Text = Val(txtcodigo3.Text) * 0.28
+            lblnum3.Text = "$"
+        ElseIf cbxentrada3.Text = "Sol Peruano" And cbxsalida3.Text = "Quetzal" Then
+            lblr3.Text = Val(txtcodigo3.Text) * 2.17
+            lblnum3.Text = "Q"
+        ElseIf cbxentrada3.Text = "Sol Peruano" And cbxsalida3.Text = "Lempira" Then
+            lblr3.Text = Val(txtcodigo3.Text) * 6.95
+            lblnum3.Text = "L"
+        ElseIf cbxentrada3.Text = "Sol Peruano" And cbxsalida3.Text = "Colón Costarisense" Then
+            lblr3.Text = Val(txtcodigo3.Text) * 166.41
+            lblnum3.Text = "₡"
+        ElseIf cbxentrada3.Text = "Sol Peruano" And cbxsalida3.Text = "Balboa" Then
+            lblr3.Text = Val(txtcodigo3.Text) * 0.28
+            lblnum3.Text = "$"
+        ElseIf cbxentrada3.Text = "Sol Peruano" And cbxsalida3.Text = "Cordoba Nicaraguence" Then
+            lblr3.Text = Val(txtcodigo3.Text) * 9.81
+            lblnum3.Text = "C$"
+        ElseIf cbxentrada3.Text = "Sol Peruano" And cbxsalida3.Text = "Dolar Canadiense" Then
+            lblr3.Text = Val(txtcodigo3.Text) * 0.37
+            lblnum3.Text = "C$"
+        ElseIf cbxentrada3.Text = "Sol Peruano" And cbxsalida3.Text = "Peso Mexicano" Then
+            lblr3.Text = Val(txtcodigo3.Text) * 6.14
+            lblnum3.Text = "$"
+        End If
+
+    End Sub
 End Class

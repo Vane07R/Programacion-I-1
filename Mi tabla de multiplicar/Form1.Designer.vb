@@ -587,7 +587,7 @@ Partial Class Form1
         Me.cbxsalida3.BackColor = System.Drawing.SystemColors.Desktop
         Me.cbxsalida3.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.cbxsalida3.FormattingEnabled = True
-        Me.cbxsalida3.Items.AddRange(New Object() {"Colon Salvadoreño", "Dolar Estadounidense", "Quetzal", "Lempira", "Colón costarricense", "Balboa", "cordoba nicaraguaense", "Dolar Canadiense", "Peso Mexicano", "sol peruano"})
+        Me.cbxsalida3.Items.AddRange(New Object() {"Colón Salvadoreño", "Dolar estadounidense", "Quetzal", "Lempira", "Colón Costarricense", "Balboa", "Cordoba Nicaraguense", "Dolar canadiense", "Peso mexicano", "Sol peruano"})
         Me.cbxsalida3.Location = New System.Drawing.Point(53, 102)
         Me.cbxsalida3.Name = "cbxsalida3"
         Me.cbxsalida3.Size = New System.Drawing.Size(136, 21)
@@ -598,7 +598,7 @@ Partial Class Form1
         Me.cbxentrada3.BackColor = System.Drawing.SystemColors.Desktop
         Me.cbxentrada3.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.cbxentrada3.FormattingEnabled = True
-        Me.cbxentrada3.Items.AddRange(New Object() {"Colon Salvadoreño", "Dolar Estadounidense", "Quetzal", "Lempira", "Colón costarricense", "Balboa", "cordoba nicaraguaense", "Dolar Canadiense", "Peso Mexicano", "sol peruano"})
+        Me.cbxentrada3.Items.AddRange(New Object() {"Colón Salvadoreño", "Dolar estadounidense", "Quetzal", "Lempira", "Colón Costarricense", "Balboa", "Cordoba Nicaraguense", "Dolar canadiense", "Peso mexicano", "Sol peruano"})
         Me.cbxentrada3.Location = New System.Drawing.Point(53, 49)
         Me.cbxentrada3.Name = "cbxentrada3"
         Me.cbxentrada3.Size = New System.Drawing.Size(136, 21)
