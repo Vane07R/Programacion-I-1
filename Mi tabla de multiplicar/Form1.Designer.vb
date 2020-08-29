@@ -22,54 +22,55 @@ Partial Class Form1
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.lblntabla = New System.Windows.Forms.Label()
-        Me.txtntabla = New System.Windows.Forms.TextBox()
-        Me.btnProcesar = New System.Windows.Forms.Button()
-        Me.lstTabla = New System.Windows.Forms.ListBox()
+        Me.lblRespuestaRomano = New System.Windows.Forms.Label()
+        Me.txtnumero = New System.Windows.Forms.TextBox()
+        Me.lblnumero = New System.Windows.Forms.Label()
+        Me.btnCalcular = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
-        'lblntabla
+        'lblRespuestaRomano
         '
-        Me.lblntabla.AutoSize = True
-        Me.lblntabla.Location = New System.Drawing.Point(183, 73)
-        Me.lblntabla.Name = "lblntabla"
-        Me.lblntabla.Size = New System.Drawing.Size(37, 13)
-        Me.lblntabla.TabIndex = 0
-        Me.lblntabla.Text = "Tabla:"
+        Me.lblRespuestaRomano.AutoSize = True
+        Me.lblRespuestaRomano.Location = New System.Drawing.Point(215, 51)
+        Me.lblRespuestaRomano.Name = "lblRespuestaRomano"
+        Me.lblRespuestaRomano.Size = New System.Drawing.Size(99, 13)
+        Me.lblRespuestaRomano.TabIndex = 11
+        Me.lblRespuestaRomano.Text = "Numero Romano: ?"
         '
-        'txtntabla
+        'txtnumero
         '
-        Me.txtntabla.Location = New System.Drawing.Point(226, 70)
-        Me.txtntabla.Name = "txtntabla"
-        Me.txtntabla.Size = New System.Drawing.Size(136, 20)
-        Me.txtntabla.TabIndex = 1
+        Me.txtnumero.Location = New System.Drawing.Point(107, 48)
+        Me.txtnumero.Name = "txtnumero"
+        Me.txtnumero.Size = New System.Drawing.Size(102, 20)
+        Me.txtnumero.TabIndex = 10
         '
-        'btnProcesar
+        'lblnumero
         '
-        Me.btnProcesar.Location = New System.Drawing.Point(177, 133)
-        Me.btnProcesar.Name = "btnProcesar"
-        Me.btnProcesar.Size = New System.Drawing.Size(209, 87)
-        Me.btnProcesar.TabIndex = 2
-        Me.btnProcesar.Text = "Generar Tabla"
-        Me.btnProcesar.UseVisualStyleBackColor = True
+        Me.lblnumero.AutoSize = True
+        Me.lblnumero.Location = New System.Drawing.Point(62, 51)
+        Me.lblnumero.Name = "lblnumero"
+        Me.lblnumero.Size = New System.Drawing.Size(42, 13)
+        Me.lblnumero.TabIndex = 9
+        Me.lblnumero.Text = "Capital:"
         '
-        'lstTabla
+        'btnCalcular
         '
-        Me.lstTabla.FormattingEnabled = True
-        Me.lstTabla.Location = New System.Drawing.Point(407, 73)
-        Me.lstTabla.Name = "lstTabla"
-        Me.lstTabla.Size = New System.Drawing.Size(234, 147)
-        Me.lstTabla.TabIndex = 3
+        Me.btnCalcular.Location = New System.Drawing.Point(85, 117)
+        Me.btnCalcular.Name = "btnCalcular"
+        Me.btnCalcular.Size = New System.Drawing.Size(148, 47)
+        Me.btnCalcular.TabIndex = 8
+        Me.btnCalcular.Text = "Calcular"
+        Me.btnCalcular.UseVisualStyleBackColor = True
         '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(800, 450)
-        Me.Controls.Add(Me.lstTabla)
-        Me.Controls.Add(Me.btnProcesar)
-        Me.Controls.Add(Me.txtntabla)
-        Me.Controls.Add(Me.lblntabla)
+        Me.ClientSize = New System.Drawing.Size(376, 213)
+        Me.Controls.Add(Me.lblRespuestaRomano)
+        Me.Controls.Add(Me.txtnumero)
+        Me.Controls.Add(Me.lblnumero)
+        Me.Controls.Add(Me.btnCalcular)
         Me.Name = "Form1"
         Me.Text = "Tabla de Multiplicar"
         Me.ResumeLayout(False)
@@ -77,8 +78,8 @@ Partial Class Form1
 
     End Sub
 
-    Friend WithEvents lblntabla As Label
-    Friend WithEvents txtntabla As TextBox
-    Friend WithEvents btnProcesar As Button
-    Friend WithEvents lstTabla As ListBox
+    Friend WithEvents lblRespuestaRomano As Label
+    Friend WithEvents txtnumero As TextBox
+    Friend WithEvents lblnumero As Label
+    Friend WithEvents btnCalcular As Button
 End Class
