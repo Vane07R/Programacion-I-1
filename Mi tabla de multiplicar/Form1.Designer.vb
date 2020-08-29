@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class Form1
     Inherits System.Windows.Forms.Form
 
     'Form reemplaza a Dispose para limpiar la lista de componentes.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,56 +20,78 @@ Partial Class Form1
     'NOTA: el Diseñador de Windows Forms necesita el siguiente procedimiento
     'Se puede modificar usando el Diseñador de Windows Forms.  
     'No lo modifique con el editor de código.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-        Me.lblntabla = New System.Windows.Forms.Label()
-        Me.txtntabla = New System.Windows.Forms.TextBox()
-        Me.btnProcesar = New System.Windows.Forms.Button()
-        Me.lstTabla = New System.Windows.Forms.ListBox()
+        Me.cboMun = New System.Windows.Forms.ComboBox()
+        Me.cboDepto = New System.Windows.Forms.ComboBox()
+        Me.lblmun = New System.Windows.Forms.Label()
+        Me.lbldepto = New System.Windows.Forms.Label()
+        Me.cboarea = New System.Windows.Forms.ComboBox()
+        Me.Label1 = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
-        'lblntabla
+        'cboMun
         '
-        Me.lblntabla.AutoSize = True
-        Me.lblntabla.Location = New System.Drawing.Point(52, 61)
-        Me.lblntabla.Name = "lblntabla"
-        Me.lblntabla.Size = New System.Drawing.Size(37, 13)
-        Me.lblntabla.TabIndex = 0
-        Me.lblntabla.Text = "Tabla:"
+        Me.cboMun.FormattingEnabled = True
+        Me.cboMun.Location = New System.Drawing.Point(223, 67)
+        Me.cboMun.Name = "cboMun"
+        Me.cboMun.Size = New System.Drawing.Size(121, 21)
+        Me.cboMun.TabIndex = 13
         '
-        'txtntabla
+        'cboDepto
         '
-        Me.txtntabla.Location = New System.Drawing.Point(95, 58)
-        Me.txtntabla.Name = "txtntabla"
-        Me.txtntabla.Size = New System.Drawing.Size(136, 20)
-        Me.txtntabla.TabIndex = 1
+        Me.cboDepto.FormattingEnabled = True
+        Me.cboDepto.Location = New System.Drawing.Point(59, 65)
+        Me.cboDepto.Name = "cboDepto"
+        Me.cboDepto.Size = New System.Drawing.Size(121, 21)
+        Me.cboDepto.TabIndex = 12
         '
-        'btnProcesar
+        'lblmun
         '
-        Me.btnProcesar.Location = New System.Drawing.Point(46, 121)
-        Me.btnProcesar.Name = "btnProcesar"
-        Me.btnProcesar.Size = New System.Drawing.Size(209, 87)
-        Me.btnProcesar.TabIndex = 2
-        Me.btnProcesar.Text = "Generar Tabla"
-        Me.btnProcesar.UseVisualStyleBackColor = True
+        Me.lblmun.AutoSize = True
+        Me.lblmun.Location = New System.Drawing.Point(189, 70)
+        Me.lblmun.Name = "lblmun"
+        Me.lblmun.Size = New System.Drawing.Size(31, 13)
+        Me.lblmun.TabIndex = 11
+        Me.lblmun.Text = "Mun:"
         '
-        'lstTabla
+        'lbldepto
         '
-        Me.lstTabla.FormattingEnabled = True
-        Me.lstTabla.Location = New System.Drawing.Point(276, 61)
-        Me.lstTabla.Name = "lstTabla"
-        Me.lstTabla.Size = New System.Drawing.Size(234, 147)
-        Me.lstTabla.TabIndex = 3
+        Me.lbldepto.AutoSize = True
+        Me.lbldepto.Location = New System.Drawing.Point(14, 65)
+        Me.lbldepto.Name = "lbldepto"
+        Me.lbldepto.Size = New System.Drawing.Size(39, 13)
+        Me.lbldepto.TabIndex = 10
+        Me.lbldepto.Text = "Depto:"
+        '
+        'cboarea
+        '
+        Me.cboarea.FormattingEnabled = True
+        Me.cboarea.Location = New System.Drawing.Point(406, 70)
+        Me.cboarea.Name = "cboarea"
+        Me.cboarea.Size = New System.Drawing.Size(121, 21)
+        Me.cboarea.TabIndex = 15
+        '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.Location = New System.Drawing.Point(372, 73)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(32, 13)
+        Me.Label1.TabIndex = 14
+        Me.Label1.Text = "Area:"
         '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(563, 307)
-        Me.Controls.Add(Me.lstTabla)
-        Me.Controls.Add(Me.btnProcesar)
-        Me.Controls.Add(Me.txtntabla)
-        Me.Controls.Add(Me.lblntabla)
+        Me.ClientSize = New System.Drawing.Size(601, 186)
+        Me.Controls.Add(Me.cboarea)
+        Me.Controls.Add(Me.Label1)
+        Me.Controls.Add(Me.cboMun)
+        Me.Controls.Add(Me.cboDepto)
+        Me.Controls.Add(Me.lblmun)
+        Me.Controls.Add(Me.lbldepto)
         Me.Name = "Form1"
         Me.Text = "Tabla de Multiplicar"
         Me.ResumeLayout(False)
@@ -77,8 +99,10 @@ Partial Class Form1
 
     End Sub
 
-    Friend WithEvents lblntabla As Label
-    Friend WithEvents txtntabla As TextBox
-    Friend WithEvents btnProcesar As Button
-    Friend WithEvents lstTabla As ListBox
+    Friend WithEvents cboMun As ComboBox
+    Friend WithEvents cboDepto As ComboBox
+    Friend WithEvents lblmun As Label
+    Friend WithEvents lbldepto As Label
+    Friend WithEvents cboarea As ComboBox
+    Friend WithEvents Label1 As Label
 End Class
