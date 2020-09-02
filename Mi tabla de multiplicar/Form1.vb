@@ -82,14 +82,52 @@
             lblr3.Text = Val(txtcodigo3.Text) / 107639
             lblnum3.Text = "HECT"
         End If
+        If cbxentrada3.Text = "Manzana" And cbxsalida3.Text = "Manzana" Then
+            lblr3.Text = Val(txtcodigo3.Text)
+            lblnum3.Text = "M"
+        ElseIf cbxentrada3.Text = "Manzana" And cbxsalida3.Text = "Pie cuadrado" Then
+            lblr3.Text = Val(txtcodigo3.Text) * 75820.9849753
+            lblnum3.Text = "PC"
+        ElseIf cbxentrada3.Text = "Manzana" And cbxsalida3.Text = "Vara cuadrada" Then
+            lblr3.Text = Val(txtcodigo3.Text) * 10000
+            lblnum3.Text = "VC"
+        ElseIf cbxentrada3.Text = "Manzana" And cbxsalida3.Text = "Yarda cuadrada" Then
+            lblr3.Text = Val(txtcodigo3.Text) * 8424.5538861
+            lblnum3.Text = "YC"
+        ElseIf cbxentrada3.Text = "Manzana" And cbxsalida3.Text = "Metro cuadrado" Then
+            lblr3.Text = Val(txtcodigo3.Text) * 6987.3878
+            lblnum3.Text = "MC"
+        ElseIf cbxentrada3.Text = "Manzana" And cbxsalida3.Text = "Tareas" Then
+            lblr3.Text = Val(txtcodigo3.Text) * 16
+            lblnum3.Text = "T"
+        ElseIf cbxentrada3.Text = "Manzana" And cbxsalida3.Text = "Hectárea" Then
+            lblr3.Text = Val(txtcodigo3.Text) * 0.705
+            lblnum3.Text = "HECT"
 
-    End Sub
+        End If
+        If cbxentrada3.Text = "Hectárea" And cbxsalida3.Text = "Hectárea" Then
+            lblr3.Text = Val(txtcodigo3.Text)
+            lblnum3.Text = "HECT"
+        ElseIf cbxentrada3.Text = "Hectárea" And cbxsalida3.Text = "Pie cuadrado" Then
+            lblr3.Text = Val(txtcodigo3.Text) * 107639
+            lblnum3.Text = "PC"
+        ElseIf cbxentrada3.Text = "Hectárea" And cbxsalida3.Text = "Vara cuadrada" Then
+            lblr3.Text = Val(txtcodigo3.Text) * 7000
+            lblnum3.Text = "VC"
+        ElseIf cbxentrada3.Text = "Hectárea" And cbxsalida3.Text = "Yarda cuadrada" Then
+            lblr3.Text = Val(txtcodigo3.Text) * 11959.9
+            lblnum3.Text = "YC"
+        ElseIf cbxentrada3.Text = "Hectárea" And cbxsalida3.Text = "Metro cuadrado" Then
+            lblr3.Text = Val(txtcodigo3.Text) * 10000
+            lblnum3.Text = "MC"
+        ElseIf cbxentrada3.Text = "Hectárea" And cbxsalida3.Text = "Tareas" Then
+            lblr3.Text = Val(txtcodigo3.Text) * 15.90330789
+            lblnum3.Text = "T"
+        ElseIf cbxentrada3.Text = "Hectárea" And cbxsalida3.Text = "Manzana" Then
+            lblr3.Text = Val(txtcodigo3.Text) * 1.4184
+            lblnum3.Text = "M"
 
-    Private Sub RadioButton1_CheckedChanged(sender As Object, e As EventArgs) Handles RadioButton1.CheckedChanged
-        TabControlPrincipal.SelectedTab = TabControlPrincipal.TabPages.Item(0)
-    End Sub
+        End If
 
-    Private Sub RadioButton2_CheckedChanged(sender As Object, e As EventArgs) Handles RadioButton2.CheckedChanged
-        TabControlPrincipal.SelectedTab = TabControlPrincipal.TabPages.Item(1)
     End Sub
 End Class
