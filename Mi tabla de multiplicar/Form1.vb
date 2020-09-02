@@ -46,13 +46,13 @@
 
 
         ElseIf cbxentrada.Text = "Libras" And cbxsalida.Text = "Cajas" Then
-            lblr.Text = Val(txtcodigo.Text) * 2
+            lblr.Text = Val(txtcodigo.Text) * 5
             lblnum.Text = "C"
         ElseIf cbxentrada.Text = "Libras" And cbxsalida.Text = "Unidades" Then
             lblr.Text = Val(txtcodigo.Text) / 0.1
             lblnum.Text = "U"
         ElseIf cbxentrada.Text = "Libras" And cbxsalida.Text = "Saco" Then
-            lblr.Text = Val(txtcodigo.Text) * 2
+            lblr.Text = Val(txtcodigo.Text) / 0.01
             lblnum.Text = "S"
         ElseIf cbxentrada.Text = "Libras" And cbxsalida.Text = "Libras" Then
             lblr.Text = Val(txtcodigo.Text)
