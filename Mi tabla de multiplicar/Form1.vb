@@ -1,22 +1,24 @@
 ﻿Public Class Form1
 
     Private Sub Convertidor_Click(sender As Object, e As EventArgs) Handles Convertidor.Click
+        'la caja equivale 25 kilogramo'
+        'la caja equivale 55 libras'
         If cbxentrada.Text = "Cajas" And cbxsalida.Text = "Cajas" Then
             lblr.Text = Val(txtcodigo.Text)
             lblnum.Text = "C"
         ElseIf cbxentrada.Text = "Cajas" And cbxsalida.Text = "Unidades" Then
-            lblr.Text = Val(txtcodigo.Text) * 5
+            lblr.Text = Val(txtcodigo.Text) * 25
             lblnum.Text = "U"
         ElseIf cbxentrada.Text = "Cajas" And cbxsalida.Text = "Saco" Then
             lblr.Text = Val(txtcodigo.Text) * 0.5
             lblnum.Text = "S"
         ElseIf cbxentrada.Text = "Cajas" And cbxsalida.Text = "Libras" Then
-            lblr.Text = Val(txtcodigo.Text) * 2205
+            lblr.Text = Val(txtcodigo.Text) * 55
             lblnum.Text = "L"
 
 
         ElseIf cbxentrada.Text = "Unidades" And cbxsalida.Text = "Cajas" Then
-            lblr.Text = Val(txtcodigo.Text) * 1
+            lblr.Text = Val(txtcodigo.Text) / 25
             lblnum.Text = "C"
         ElseIf cbxentrada.Text = "Unidades" And cbxsalida.Text = "Unidades" Then
             lblr.Text = Val(txtcodigo.Text)
