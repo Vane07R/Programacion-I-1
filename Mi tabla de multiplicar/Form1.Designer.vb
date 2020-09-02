@@ -24,13 +24,8 @@ Partial Class Form1
     Private Sub InitializeComponent()
         Me.TabControlPrincipal = New System.Windows.Forms.TabControl()
         Me.TabPage1 = New System.Windows.Forms.TabPage()
-        Me.lblnum = New System.Windows.Forms.Label()
-        Me.txtcodigo = New System.Windows.Forms.TextBox()
-        Me.lblr = New System.Windows.Forms.Label()
-        Me.Label4 = New System.Windows.Forms.Label()
+        Me.lblunidad = New System.Windows.Forms.Label()
         Me.Label5 = New System.Windows.Forms.Label()
-        Me.cbxsalida = New System.Windows.Forms.ComboBox()
-        Me.cbxentrada = New System.Windows.Forms.ComboBox()
         Me.Convertidor = New System.Windows.Forms.Button()
         Me.TabPage2 = New System.Windows.Forms.TabPage()
         Me.lblnum3 = New System.Windows.Forms.Label()
@@ -44,6 +39,11 @@ Partial Class Form1
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.RadioButton2 = New System.Windows.Forms.RadioButton()
         Me.RadioButton1 = New System.Windows.Forms.RadioButton()
+        Me.lblr = New System.Windows.Forms.Label()
+        Me.lblcantidad = New System.Windows.Forms.Label()
+        Me.TextBox1 = New System.Windows.Forms.TextBox()
+        Me.TextBox2 = New System.Windows.Forms.TextBox()
+        Me.TextBox3 = New System.Windows.Forms.TextBox()
         Me.TabControlPrincipal.SuspendLayout()
         Me.TabPage1.SuspendLayout()
         Me.TabPage2.SuspendLayout()
@@ -62,13 +62,13 @@ Partial Class Form1
         '
         'TabPage1
         '
-        Me.TabPage1.Controls.Add(Me.lblnum)
-        Me.TabPage1.Controls.Add(Me.txtcodigo)
+        Me.TabPage1.Controls.Add(Me.TextBox3)
+        Me.TabPage1.Controls.Add(Me.TextBox2)
+        Me.TabPage1.Controls.Add(Me.TextBox1)
         Me.TabPage1.Controls.Add(Me.lblr)
-        Me.TabPage1.Controls.Add(Me.Label4)
+        Me.TabPage1.Controls.Add(Me.lblunidad)
+        Me.TabPage1.Controls.Add(Me.lblcantidad)
         Me.TabPage1.Controls.Add(Me.Label5)
-        Me.TabPage1.Controls.Add(Me.cbxsalida)
-        Me.TabPage1.Controls.Add(Me.cbxentrada)
         Me.TabPage1.Controls.Add(Me.Convertidor)
         Me.TabPage1.Location = New System.Drawing.Point(4, 22)
         Me.TabPage1.Name = "TabPage1"
@@ -78,81 +78,31 @@ Partial Class Form1
         Me.TabPage1.Text = "Pestaña 1"
         Me.TabPage1.UseVisualStyleBackColor = True
         '
-        'lblnum
+        'lblunidad
         '
-        Me.lblnum.AutoSize = True
-        Me.lblnum.Location = New System.Drawing.Point(435, 131)
-        Me.lblnum.Name = "lblnum"
-        Me.lblnum.Size = New System.Drawing.Size(16, 13)
-        Me.lblnum.TabIndex = 128
-        Me.lblnum.Text = "..."
-        '
-        'txtcodigo
-        '
-        Me.txtcodigo.BackColor = System.Drawing.SystemColors.ScrollBar
-        Me.txtcodigo.Location = New System.Drawing.Point(41, 82)
-        Me.txtcodigo.Name = "txtcodigo"
-        Me.txtcodigo.Size = New System.Drawing.Size(100, 20)
-        Me.txtcodigo.TabIndex = 127
-        '
-        'lblr
-        '
-        Me.lblr.AutoSize = True
-        Me.lblr.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblr.Location = New System.Drawing.Point(346, 128)
-        Me.lblr.Name = "lblr"
-        Me.lblr.Size = New System.Drawing.Size(83, 16)
-        Me.lblr.TabIndex = 126
-        Me.lblr.Text = "Repuesta: ?"
-        Me.lblr.TextAlign = System.Drawing.ContentAlignment.TopRight
-        '
-        'Label4
-        '
-        Me.Label4.AutoSize = True
-        Me.Label4.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.Location = New System.Drawing.Point(181, 128)
-        Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(17, 16)
-        Me.Label4.TabIndex = 125
-        Me.Label4.Text = "A"
+        Me.lblunidad.AutoSize = True
+        Me.lblunidad.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblunidad.Location = New System.Drawing.Point(273, 97)
+        Me.lblunidad.Name = "lblunidad"
+        Me.lblunidad.Size = New System.Drawing.Size(61, 16)
+        Me.lblunidad.TabIndex = 127
+        Me.lblunidad.Text = "Unidad :"
         '
         'Label5
         '
         Me.Label5.AutoSize = True
         Me.Label5.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label5.Location = New System.Drawing.Point(55, 52)
+        Me.Label5.Location = New System.Drawing.Point(173, 52)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(72, 16)
         Me.Label5.TabIndex = 124
         Me.Label5.Text = "Conversor"
         '
-        'cbxsalida
-        '
-        Me.cbxsalida.BackColor = System.Drawing.SystemColors.Desktop
-        Me.cbxsalida.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.cbxsalida.FormattingEnabled = True
-        Me.cbxsalida.Items.AddRange(New Object() {"Cajas", "Unidades", "Saco", "Libras"})
-        Me.cbxsalida.Location = New System.Drawing.Point(204, 123)
-        Me.cbxsalida.Name = "cbxsalida"
-        Me.cbxsalida.Size = New System.Drawing.Size(136, 21)
-        Me.cbxsalida.TabIndex = 123
-        '
-        'cbxentrada
-        '
-        Me.cbxentrada.BackColor = System.Drawing.SystemColors.Desktop
-        Me.cbxentrada.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.cbxentrada.FormattingEnabled = True
-        Me.cbxentrada.Items.AddRange(New Object() {"Cajas", "Unidades", "Saco", "Libras"})
-        Me.cbxentrada.Location = New System.Drawing.Point(39, 123)
-        Me.cbxentrada.Name = "cbxentrada"
-        Me.cbxentrada.Size = New System.Drawing.Size(136, 21)
-        Me.cbxentrada.TabIndex = 122
-        '
         'Convertidor
         '
         Me.Convertidor.BackColor = System.Drawing.SystemColors.MenuHighlight
         Me.Convertidor.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Convertidor.Location = New System.Drawing.Point(41, 165)
+        Me.Convertidor.Location = New System.Drawing.Point(161, 209)
         Me.Convertidor.Name = "Convertidor"
         Me.Convertidor.Size = New System.Drawing.Size(126, 37)
         Me.Convertidor.TabIndex = 121
@@ -297,6 +247,48 @@ Partial Class Form1
         Me.RadioButton1.Text = "Pestaña 1"
         Me.RadioButton1.UseVisualStyleBackColor = True
         '
+        'lblr
+        '
+        Me.lblr.AutoSize = True
+        Me.lblr.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblr.Location = New System.Drawing.Point(32, 160)
+        Me.lblr.Name = "lblr"
+        Me.lblr.Size = New System.Drawing.Size(81, 16)
+        Me.lblr.TabIndex = 128
+        Me.lblr.Text = "Respuesta :"
+        '
+        'lblcantidad
+        '
+        Me.lblcantidad.AutoSize = True
+        Me.lblcantidad.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblcantidad.Location = New System.Drawing.Point(40, 102)
+        Me.lblcantidad.Name = "lblcantidad"
+        Me.lblcantidad.Size = New System.Drawing.Size(73, 16)
+        Me.lblcantidad.TabIndex = 126
+        Me.lblcantidad.Text = "Cantidad :"
+        Me.lblcantidad.TextAlign = System.Drawing.ContentAlignment.TopRight
+        '
+        'TextBox1
+        '
+        Me.TextBox1.Location = New System.Drawing.Point(119, 98)
+        Me.TextBox1.Name = "TextBox1"
+        Me.TextBox1.Size = New System.Drawing.Size(100, 20)
+        Me.TextBox1.TabIndex = 129
+        '
+        'TextBox2
+        '
+        Me.TextBox2.Location = New System.Drawing.Point(340, 93)
+        Me.TextBox2.Name = "TextBox2"
+        Me.TextBox2.Size = New System.Drawing.Size(100, 20)
+        Me.TextBox2.TabIndex = 130
+        '
+        'TextBox3
+        '
+        Me.TextBox3.Location = New System.Drawing.Point(119, 159)
+        Me.TextBox3.Name = "TextBox3"
+        Me.TextBox3.Size = New System.Drawing.Size(100, 20)
+        Me.TextBox3.TabIndex = 131
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -328,15 +320,15 @@ Partial Class Form1
     Friend WithEvents cbxsalida3 As ComboBox
     Friend WithEvents cbxentrada3 As ComboBox
     Friend WithEvents btnarea As Button
-    Friend WithEvents lblnum As Label
-    Friend WithEvents txtcodigo As TextBox
-    Friend WithEvents lblr As Label
-    Friend WithEvents Label4 As Label
     Friend WithEvents Label5 As Label
-    Friend WithEvents cbxsalida As ComboBox
-    Friend WithEvents cbxentrada As ComboBox
     Friend WithEvents Convertidor As Button
     Friend WithEvents Panel1 As Panel
     Friend WithEvents RadioButton2 As RadioButton
     Friend WithEvents RadioButton1 As RadioButton
+    Friend WithEvents lblunidad As Label
+    Friend WithEvents lblr As Label
+    Friend WithEvents lblcantidad As Label
+    Friend WithEvents TextBox3 As TextBox
+    Friend WithEvents TextBox2 As TextBox
+    Friend WithEvents TextBox1 As TextBox
 End Class
