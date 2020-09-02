@@ -130,4 +130,12 @@
         End If
 
     End Sub
+
+    Private Sub RadioButton1_CheckedChanged(sender As Object, e As EventArgs) Handles RadioButton1.CheckedChanged
+        TabControlPrincipal.SelectedTab = TabControlPrincipal.TabPages.Item(0)
+    End Sub
+
+    Private Sub RadioButton2_CheckedChanged(sender As Object, e As EventArgs) Handles RadioButton2.CheckedChanged
+        TabControlPrincipal.SelectedTab = TabControlPrincipal.TabPages.Item(1)
+    End Sub
 End Class
