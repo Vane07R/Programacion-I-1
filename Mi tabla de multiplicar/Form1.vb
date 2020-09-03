@@ -153,6 +153,7 @@
             lblr3.Text = Val(txtcodigo3.Text) * 0.705
             lblnum3.Text = "HECT"
 
+
         End If
         If cbxentrada3.Text = "Hectárea" And cbxsalida3.Text = "Hectárea" Then
             lblr3.Text = Val(txtcodigo3.Text)
