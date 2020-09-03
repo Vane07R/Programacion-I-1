@@ -83,7 +83,54 @@
         ElseIf cbxentrada3.Text = "Pie cuadrado" And cbxsalida3.Text = "Hectárea" Then
             lblr3.Text = Val(txtcodigo3.Text) / 107639
             lblnum3.Text = "HECT"
+
+        ElseIf cbxentrada3.Text = "Vara cuadrada" And cbxsalida3.Text = "Pie cuadrado" Then
+        lblr3.Text = Val(txtcodigo3.Text) * 0.13223088
+        lblnum3.Text = "PC"
+        ElseIf cbxentrada3.Text = "Vara cuadrada" And cbxsalida3.Text = "Vara cuadrada" Then
+        lblr3.Text = Val(txtcodigo3.Text)
+        lblnum3.Text = "VC"
+        ElseIf cbxentrada3.Text = "Vara cuadrada" And cbxsalida3.Text = "Yarda cuadrada" Then
+        lblr3.Text = Val(txtcodigo3.Text) * 0.840281
+        lblnum3.Text = "YC"
+        ElseIf cbxentrada3.Text = "Vara cuadrada" And cbxsalida3.Text = "Metro cuadrado" Then
+        lblr3.Text = Val(txtcodigo3.Text) * 0.9688
+        lblnum3.Text = "MC"
+        ElseIf cbxentrada3.Text = "Vara cuadrada" And cbxsalida3.Text = "Tareas" Then
+        lblr3.Text = Val(txtcodigo3.Text) * 894.9
+        lblnum3.Text = "T"
+        ElseIf cbxentrada3.Text = "Vara cuadrada" And cbxsalida3.Text = "Manzana" Then
+        lblr3.Text = Val(txtcodigo3.Text) * 0.0001
+        lblnum3.Text = "M"
+        ElseIf cbxentrada3.Text = "Vara cuadrada" And cbxsalida3.Text = "Hectárea" Then
+        lblr3.Text = Val(txtcodigo3.Text) * 0.0000968
+        lblnum3.Text = "HECT"
+
+
+        ElseIf cbxentrada3.Text = "Yarda cuadrada" And cbxsalida3.Text = "Pie cuadrado" Then
+        lblr3.Text = Val(txtcodigo3.Text) * 9
+        lblnum3.Text = "PC"
+        ElseIf cbxentrada3.Text = "Yarda cuadrada" And cbxsalida3.Text = "Vara cuadrada" Then
+        lblr3.Text = Val(txtcodigo3.Text) * 0.840281
+        lblnum3.Text = "VC"
+        ElseIf cbxentrada3.Text = "Yarda cuadrada" And cbxsalida3.Text = "Yarda cuadrada" Then
+        lblr3.Text = Val(txtcodigo3.Text)
+        lblnum3.Text = "YC"
+        ElseIf cbxentrada3.Text = "Yarda cuadrada" And cbxsalida3.Text = "Metro cuadrado" Then
+        lblr3.Text = Val(txtcodigo3.Text) / 1.196
+        lblnum3.Text = "MC"
+        ElseIf cbxentrada3.Text = "Yarda cuadrada" And cbxsalida3.Text = "Tareas" Then
+        lblr3.Text = Val(txtcodigo3.Text) * 0.001329
+        lblnum3.Text = "T"
+        ElseIf cbxentrada3.Text = "Yarda cuadrada" And cbxsalida3.Text = "Manzana" Then
+        lblr3.Text = Val(txtcodigo3.Text) * 0.00001319
+        lblnum3.Text = "M"
+        ElseIf cbxentrada3.Text = "Yarda cuadrada" And cbxsalida3.Text = "Hectárea" Then
+        lblr3.Text = Val(txtcodigo3.Text) / 11960
+        lblnum3.Text = "HECT"
+
         End If
+
         If cbxentrada3.Text = "Manzana" And cbxsalida3.Text = "Manzana" Then
             lblr3.Text = Val(txtcodigo3.Text)
             lblnum3.Text = "M"
